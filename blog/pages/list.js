@@ -1,13 +1,12 @@
 import React, { useState, useEffect } from 'react'
 import Head from 'next/head'
-import { Row, Col, List, Breadcrumb, Icon } from 'antd'
+import { Row, Col, List, Breadcrumb } from 'antd'
+import { CalendarOutlined, FolderOutlined, FireOutlined } from '@ant-design/icons';
 import Header from '../components/Header'
 import Author from '../components/Author'
 import Advert from '../components/Advert'
 import Footer from '../components/Footer'
 import '../static/style/pages/comm.css'
-import { CalendarOutlined, FolderOutlined, FireOutlined } from '@ant-design/icons';
-
 import axios from 'axios'
 import servicePath from '../config/apiUrl'
 import Link from 'next/link'
@@ -23,7 +22,7 @@ const ArticleList = (list) => {
   return (
     <>
       <Head>
-        <title>文章列表</title>
+        <title>Blog-文章列表</title>
       </Head>
       <Header />
       <Row className="comm-main" type="flex" justify="center">

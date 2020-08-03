@@ -1,6 +1,6 @@
-import React from 'react'
+import React,{useState,useEffect} from 'react'
 import Head from 'next/head'
-import { Row, Col, Affix,  Breadcrumb, Icon } from 'antd'
+import { Row, Col, Affix,  Breadcrumb } from 'antd'
 import {CalendarOutlined, FolderOutlined,FireOutlined} from '@ant-design/icons';
 
 import Header from '../components/Header'
@@ -21,7 +21,7 @@ import Tocify from '../components/tocify.tsx'
 import servicePath from '../config/apiUrl'
 
 const Detailed = (props) => {
-
+  console.log(props);
   const tocify = new Tocify()
   const renderer = new marked.Renderer()
 
@@ -48,7 +48,7 @@ const Detailed = (props) => {
   return (
     <>
       <Head>
-        <title>博客详细页</title>
+        <title>Blog-详细页</title>
       </Head>
       <Header />
       <Row className="comm-main" type="flex" justify="center">
@@ -57,8 +57,8 @@ const Detailed = (props) => {
             <div className="bread-div">
               <Breadcrumb>
                 <Breadcrumb.Item><a href="/">首页</a></Breadcrumb.Item>
-                <Breadcrumb.Item>文章列表</Breadcrumb.Item>
-                <Breadcrumb.Item>博客前端界面</Breadcrumb.Item>
+                <Breadcrumb.Item><a href={`/list?id=${props.typeId}`}>{props.typeName}</a></Breadcrumb.Item>
+                <Breadcrumb.Item>{props.title}</Breadcrumb.Item>
               </Breadcrumb>
             </div>
             <div>

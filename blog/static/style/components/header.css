@@ -9,13 +9,13 @@
     color:#1e90ff;
     font-size: 1.5rem;
     text-align: left;
-
+    font-family:'Times New Roman';
 }
 .header-txt{
     font-size: 0.8rem;
-    color: #999;
+    color: rgb(206, 193, 193);
     display: inline-block;
-    padding-left: 0.3rem;
+    padding-left: 0.5rem;
 }
 .ant-meu{
     line-height: 2.6rem;

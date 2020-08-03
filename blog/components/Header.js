@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import '../static/style/components/header.css'
 
-import { Row, Col, Menu, Icon } from 'antd'
+import { Row, Col, Menu} from 'antd'
 import Router from 'next/router'
 import Link from 'next/link'
 import axios from 'axios'
@@ -36,8 +36,8 @@ const Header = () => {
         <div className="header">
             <Row type="flex" justify="center">
                 <Col xs={24} sm={24} md={10} lg={15} xl={12}>
-                    <span className="header-logo">嗯哼</span>
-                    <span className="header-txt">初入前端的小白一枚</span>
+                    <span className="header-logo">Real world</span>
+                    <span className="header-txt">不求最美，只愿最真，仅道是寻常。</span>
                 </Col>
 
                 <Col className="memu-div" xs={0} sm={0} md={14} lg={8} xl={6}>

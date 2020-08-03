@@ -34,3 +34,8 @@ body{
   display: inline-block;
   padding: 0 10px;
 }
+
+.bread-div{
+  margin-left: 0.5rem;
+  margin-top: 0.5rem;
+}
